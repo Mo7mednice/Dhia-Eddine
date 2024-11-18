@@ -1,0 +1,185 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0ebe1;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 50%;
+}
+
+.header {
+    background-color: #8b5d3d;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.header li {
+    background-color: #d4c1b0;
+    padding: 12px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.header li:hover {
+    background-color: #c09a7c;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.header li a:hover,
+#profile-menu li a:hover,
+#li-home a {
+    color: #ffcc00;
+}
+
+#profile-menu {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-menu img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#profile-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #d4c1b0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    min-width: 200px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 101;
+}
+
+#profile-menu:hover #profile-dropdown,
+#profile-menu:focus-visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#profile-dropdown li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin: 5px auto;
+}
+
+#profile-dropdown li:hover {
+    background-color: #c09a7c;
+}
+
+#profile-dropdown li a {
+    text-decoration: none;
+    color: #5e4b42;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+#profile-dropdown li a {
+    text-decoration: none;
+    color: #5e4b42;
+    font-size: 16px;
+}
+
+#profile-dropdown li span {
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header img {
+        margin-left: 10px;
+    }
+
+    .header ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .header li {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    #profile-menu img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #profile-menu ion-icon {
+        font-size: 20px;
+    }
+
+    #profile-dropdown {
+        position: static;
+        width: 100%;
+    }
+
+    #profile-dropdown li {
+        padding: 8px 20px;
+        width: 100%;
+    }
+}

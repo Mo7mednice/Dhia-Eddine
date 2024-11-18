@@ -1,0 +1,35 @@
+.footer {
+    background-image: linear-gradient(to bottom, #8b5d3d, rgba(95, 95, 95, 0.418));
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer #content-footer {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+    color: #d4c1b0;
+    letter-spacing: 1px;
+    transition: text-shadow 0.3s ease;
+}
+.footer #content-footer:hover{
+    transform: translateY(-2px);
+    text-shadow: 2px 4px   15px rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+    
+    .footer ion-icon {
+        font-size: 18px;
+    }
+}

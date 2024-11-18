@@ -1,0 +1,147 @@
+#profile-menu{
+    box-shadow: 0.5px 5px 1px black;
+}
+#profile-dropdown #li-profile a {
+    color: #ffcc00;
+}
+
+#li-home a {
+    color: white;
+}
+.all {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+    color: #5e4b42;
+}
+
+.all h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #8b5d3d;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs-groupe {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+}
+
+.inputs-groupe label {
+    font-size: 18px;
+    color: #5e4b42;
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+
+.inputs-groupe input {
+    width: 100%;
+    border: none;
+    border-bottom: 5px solid rgb(205, 139, 48);
+    border-radius: 0 0 5px 60px;
+    padding: 20px;
+    padding-left: 30px;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.inputs-groupe input:focus {
+    border-color: #8b5d3d;
+    outline: none;
+}
+
+.icon-show {
+    position: absolute;
+    top: 80%;
+    right: -20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon-show ion-icon {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+}
+
+.icon-show:hover ion-icon {
+    color: rgba(0, 0, 0, 0.571);
+}
+
+#icon-edit {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    transform: translateY(0);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#icon-edit ion-icon {
+    font-size: 40px;
+    font-weight: bolder;
+    vertical-align: middle;
+    color: rgb(45, 178, 255);
+    transition: color 0.3s, transform 0.1s ease, background-color 0.3s ease;
+}
+
+#icon-edit ion-icon:hover {
+    color: rgba(18, 121, 181, 0.873);
+    transform: translateY(-2px);
+}
+
+.swal2-label {
+    display: block;
+    position: relative;
+    top: 15px;
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .container h1 {
+        font-size: 22px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+}
